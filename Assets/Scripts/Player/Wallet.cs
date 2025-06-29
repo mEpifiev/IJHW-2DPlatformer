@@ -5,7 +5,7 @@ public class Wallet : MonoBehaviour
 {
     private float _coins;
 
-    public event Action<float> CoinChanged;
+    public event Action CoinChanged;
 
     public float Coins => _coins;
 
@@ -16,6 +16,6 @@ public class Wallet : MonoBehaviour
 
         _coins += amoumt;
 
-        CoinChanged?.Invoke(_coins);
+        CoinChanged?.Invoke();
     }
 }

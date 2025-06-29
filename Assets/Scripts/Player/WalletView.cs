@@ -25,8 +25,8 @@ public class WalletView : MonoBehaviour
         _wallet.CoinChanged -= DisplayWallet;
     }
 
-    private void DisplayWallet(float amount)
+    private void DisplayWallet()
     {
-        _view.text = amount.ToString();
+        _view.text = _wallet.Coins.ToString();
     }
 }
