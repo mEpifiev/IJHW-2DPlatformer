@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(EnemyAnimator))]
+[RequireComponent(typeof(EnemyAnimator), typeof(Flipper))]
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private Waypoint[] _waypoints;
@@ -8,6 +8,7 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] private float _waitTime;
 
     private EnemyAnimator _enemyAnimator;
+    private Flipper _flipper;
 
     private int _currentWaypointIndex = 0;
     private float _waitTimer = 0f;
@@ -17,6 +18,7 @@ public class EnemyMover : MonoBehaviour
     private void Awake()
     {
         _enemyAnimator = GetComponent<EnemyAnimator>();
+        _flipper = GetComponent<Flipper>();
     }
 
     private void Update()
@@ -46,6 +48,7 @@ public class EnemyMover : MonoBehaviour
         Transform target = _waypoints[_currentWaypointIndex].transform;
 
         Vector2 currentPosition = transform.position;
+        float direction = target.position.x - currentPosition.x;
 
         currentPosition.x = Mathf.MoveTowards(currentPosition.x, target.position.x, _moveSpeed * Time.deltaTime);
         transform.position = currentPosition;
@@ -55,18 +58,6 @@ public class EnemyMover : MonoBehaviour
         if (Mathf.Abs(currentPosition.x - target.position.x) < _reachThreshold)
             _isWaiting = true;
 
-        Flip(target);
-    }
-
-    private void Flip(Transform target)
-    {
-        Vector3 scale = transform.localScale;
-
-        if (target.position.x > transform.position.x)
-            scale.x = Mathf.Abs(scale.x);
-        else
-            scale.x = -Mathf.Abs(scale.x);
-
-        transform.localScale = scale;
+        _flipper.Flip(direction);
     }
 }
