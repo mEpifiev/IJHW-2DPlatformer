@@ -26,7 +26,7 @@ public class Jumper : MonoBehaviour
             _isJumping = true;
     }
 
-    public void Jump()
+    public void FixedUpdate()
     {
         if (_isJumping == false)
             return;
