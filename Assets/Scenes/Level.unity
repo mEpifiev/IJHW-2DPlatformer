@@ -1355,6 +1355,7 @@ GameObject:
   - component: {fileID: 270587841}
   - component: {fileID: 270587840}
   - component: {fileID: 270587839}
+  - component: {fileID: 270587844}
   m_Layer: 6
   m_Name: Platform3
   m_TagString: Untagged
@@ -1477,7 +1478,7 @@ TilemapCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -1644,6 +1645,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &270587844
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270587837}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &277844936
 GameObject:
   m_ObjectHideFlags: 0
