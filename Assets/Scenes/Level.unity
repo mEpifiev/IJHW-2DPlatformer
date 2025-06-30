@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 69682033}
   - component: {fileID: 69682034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221816020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 494068950}
   - component: {fileID: 494068948}
   - component: {fileID: 494068949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wallet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2346,7 +2346,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73, y: -1.04, z: -10}
+  m_LocalPosition: {x: 31.9, y: 0.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5036,7 +5036,7 @@ Transform:
   m_GameObject: {fileID: 2059664805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73, y: -1.04, z: -10}
+  m_LocalPosition: {x: 31.9, y: 0.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5252,7 +5252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8778629289572513161}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5300,7 +5300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332290953088}
   - component: {fileID: 3994036332290953091}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: REye_Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5384,7 +5384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332304975538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handband
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5416,7 +5416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332358878932}
   - component: {fileID: 3994036332358878935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LBackHair_Default_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5485,7 +5485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332359241037}
   - component: {fileID: 3994036332359241036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEye_Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5585,7 +5585,7 @@ GameObject:
   - component: {fileID: 3994036332392546136}
   - component: {fileID: 3994036332392546138}
   - component: {fileID: 3994036332392546139}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEye_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5674,7 @@ GameObject:
   - component: {fileID: 3994036332397591565}
   - component: {fileID: 3994036332397591567}
   - component: {fileID: 3994036332397591564}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LHand_Default_Gra_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5780,7 +5780,7 @@ GameObject:
   - component: {fileID: 3994036332401668627}
   - component: {fileID: 3994036332401668629}
   - component: {fileID: 3994036332401668626}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RArm_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5902,7 +5902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332426853698}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye_Hurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5935,7 +5935,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332484771780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye_Dizzy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5951,7 +5951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332548775547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig2_LArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6000,7 +6000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332566718398}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_LArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6016,7 +6016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332591041785}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6051,7 +6051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332609805239}
   - component: {fileID: 3994036332609805238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shoes_Default_L01_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6151,7 +6151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332674764222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6169,7 +6169,7 @@ GameObject:
   - component: {fileID: 3994036332685870363}
   - component: {fileID: 3994036332685870365}
   - component: {fileID: 3994036332685870362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RLeg_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6292,7 +6292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332759391156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6324,7 +6324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332778915550}
   - component: {fileID: 3994036332778915553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: REye_Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6392,7 +6392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332782835649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig2_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6442,7 +6442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036332796909722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_RArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6474,7 +6474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332797669076}
   - component: {fileID: 3994036332797669079}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEye_Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6544,7 +6544,7 @@ GameObject:
   - component: {fileID: 3994036332822206553}
   - component: {fileID: 3994036332822206555}
   - component: {fileID: 3994036332822206552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6649,7 +6649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036332870303847}
   - component: {fileID: 3994036332870303846}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEye_Hurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6734,7 +6734,7 @@ GameObject:
   - component: {fileID: 3994036333008014969}
   - component: {fileID: 3994036333008014971}
   - component: {fileID: 3994036333008014968}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RHand_Default_Gra_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6856,7 +6856,7 @@ GameObject:
   - component: {fileID: 3994036333066246204}
   - component: {fileID: 3994036333066246206}
   - component: {fileID: 3994036333066246207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6961,7 +6961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333131028734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Acc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6977,7 +6977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333188740027}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hairpin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7009,7 +7009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333204071845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_LLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7057,7 +7057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333244968858}
   - component: {fileID: 3994036333244968861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RBackHair_Default_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7143,7 +7143,7 @@ GameObject:
   - component: {fileID: 3994036333261415882}
   - component: {fileID: 3994036333261415884}
   - component: {fileID: 3994036333261415885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LArm_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7249,7 +7249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333294763222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye_Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7265,7 +7265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333320041649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig2_RLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7314,7 +7314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333383860898}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7330,7 +7330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333447990409}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig2_RArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7379,7 +7379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333458841089}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eye_Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7395,7 +7395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333481875407}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Acc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7447,7 +7447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333500008726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7463,7 +7463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333598718349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig2_LLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7496,7 +7496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333601000957}
   - component: {fileID: 3994036333601000956}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FrontHair_Default_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7647,7 +7647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333651659521}
   - component: {fileID: 3994036333651659520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handband_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7679,7 +7679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333799377916}
   - component: {fileID: 3994036333799377919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: REye_Dizzy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7747,7 +7747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036333801228121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Acc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7781,7 +7781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333812858845}
   - component: {fileID: 3994036333812858844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: REye_Hurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7880,7 +7880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333900078606}
   - component: {fileID: 3994036333900078609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hairpin_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7964,7 +7964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333941119652}
   - component: {fileID: 3994036333941119655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEye_Dizzy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8048,7 +8048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994036333988023952}
   - component: {fileID: 3994036333988023955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shoes_Default_L01_Hisa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8116,7 +8116,7 @@ Transform:
   m_GameObject: {fileID: 3994036334027276455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73, y: -1.04, z: 0}
+  m_LocalPosition: {x: 31.9, y: 0.2, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8144,7 +8144,8 @@ GameObject:
   - component: {fileID: 3994036334027276467}
   - component: {fileID: 3994036334027276468}
   - component: {fileID: 3994036334027276469}
-  m_Layer: 0
+  - component: {fileID: 3994036334027276470}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8314,6 +8315,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallet: {fileID: 494068948}
+--- !u!114 &3994036334027276470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994036334027276455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a72da0a3ef5aa4da697ad2a41879e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3994036334036393848
 Transform:
   m_ObjectHideFlags: 0
@@ -8338,7 +8351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036334036393848}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_LHand_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8370,7 +8383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036334179850792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Acc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8388,7 +8401,7 @@ GameObject:
   - component: {fileID: 3994036334202260747}
   - component: {fileID: 3994036334202260749}
   - component: {fileID: 3994036334202260746}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: REye_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8490,7 +8503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036334265334885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_RHand_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8521,7 +8534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3994036334268237979}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rig1_RLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8571,7 +8584,7 @@ GameObject:
   - component: {fileID: 3994036334324948526}
   - component: {fileID: 3994036334324948528}
   - component: {fileID: 3994036334324948529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LLeg_Default_01_Gra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8659,6 +8672,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1043112839721001888, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308302081630796982, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: _layerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720152006298968654, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5720152006298968654, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: _waypoints.Array.data[0]
       value: 
@@ -8670,10 +8695,6 @@ PrefabInstance:
     - target: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_Name
       value: SharkEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8693,15 +8714,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8729,7 +8750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3402006995744127961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
