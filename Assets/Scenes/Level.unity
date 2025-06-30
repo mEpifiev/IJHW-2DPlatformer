@@ -4204,6 +4204,24 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &923149774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+  m_PrefabInstance: {fileID: 4785205593381806504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &923149786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923149774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1acf61be1915745beb4f9d99c64429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 1
 --- !u!1 &956393216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8163,7 @@ GameObject:
   - component: {fileID: 3994036334027276468}
   - component: {fileID: 3994036334027276469}
   - component: {fileID: 3994036334027276470}
+  - component: {fileID: 3994036334027276471}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -8327,6 +8346,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a72da0a3ef5aa4da697ad2a41879e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3994036334027276471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994036334027276455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1acf61be1915745beb4f9d99c64429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 1
 --- !u!4 &3994036334036393848
 Transform:
   m_ObjectHideFlags: 0
@@ -8739,7 +8771,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 923149786}
   m_SourcePrefab: {fileID: 100100000, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
 --- !u!1 &5507446927657455031
 GameObject:
