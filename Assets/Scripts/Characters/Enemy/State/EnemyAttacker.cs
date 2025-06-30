@@ -55,7 +55,6 @@ public class EnemyAttacker : MonoBehaviour
         _cooldownTimer = 0f;
         _enemyAnimator.SetAttackAnimation();
 
-        // This assumes the Player has a component that implements IDamageable
         if (_currentTarget.TryGetComponent<IDamageable>(out var damageable))
         {
             damageable.TakeDamage(_attackDamage);
