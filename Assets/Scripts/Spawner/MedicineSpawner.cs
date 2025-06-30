@@ -1,11 +1,11 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CoinPool))]
-public class CoinSpawner : Spawner<Coin>
+[RequireComponent(typeof(MedicinePool))]
+public class MedicineSpawner : Spawner<Medicine>
 {
     private void Awake()
     {
-        GameObjectPool = GetComponent<CoinPool>();
+        GameObjectPool = GetComponent<MedicinePool>();
     }
 
     private void Start()
