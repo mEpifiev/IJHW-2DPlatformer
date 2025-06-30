@@ -56,8 +56,6 @@ public class EnemyAttacker : MonoBehaviour
         _enemyAnimator.SetAttackAnimation();
 
         if (_currentTarget.TryGetComponent<IDamageable>(out var damageable))
-        {
             damageable.TakeDamage(_attackDamage);
-        }
     }
 }
