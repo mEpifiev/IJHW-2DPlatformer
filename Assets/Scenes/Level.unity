@@ -8409,6 +8409,7 @@ GameObject:
   - component: {fileID: 3994036334027276469}
   - component: {fileID: 3994036334027276470}
   - component: {fileID: 3994036334027276471}
+  - component: {fileID: 3994036334027276472}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -8604,6 +8605,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 20
+--- !u!114 &3994036334027276472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994036334027276455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a976bf10d0ef70d4090d3f45254ad22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackRange: 1
+  _attackCooldown: 1
+  _attackDamage: 10
+  _attackableLayers:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!4 &3994036334036393848
 Transform:
   m_ObjectHideFlags: 0
@@ -8949,6 +8968,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 900997212218638421, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020056672365467366, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2561507374697512917, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: _maxHealth
       value: 10
@@ -8964,6 +8991,10 @@ PrefabInstance:
     - target: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_Name
       value: SharkEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925111341682268566, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7371446051511631648, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_LocalPosition.x
