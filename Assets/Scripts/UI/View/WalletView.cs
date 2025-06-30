@@ -1,17 +1,13 @@
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(Wallet))]
 public class WalletView : MonoBehaviour
 {
+    [SerializeField] private Wallet _wallet;
     [SerializeField] private TMP_Text _view;
-
-    private Wallet _wallet;
 
     private void Awake()
     {
-        _wallet = GetComponent<Wallet>();
-
         _view.text = _wallet.Coins.ToString();
     }
 

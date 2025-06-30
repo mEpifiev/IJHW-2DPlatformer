@@ -49,9 +49,11 @@ public class EnemyAttacker : MonoBehaviour
     private void Attack()
     {
         _cooldownTimer = 0f;
-        _enemyAnimator.SetAttackAnimation();
 
         if (_currentTarget.TryGetComponent(out IDamageable damageable))
+        {
             damageable.TakeDamage(_attackDamage);
+            _enemyAnimator.SetAttackAnimation();
+        }
     }
 }

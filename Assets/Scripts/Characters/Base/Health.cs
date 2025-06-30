@@ -5,14 +5,16 @@ public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] private float _maxHealth;
 
-    private float _currentHealth;
+    public float CurrentHealth { get; private set; }
 
     public event Action<float> Changed;
     public event Action Died;
 
     private void Awake()
     {
-        _currentHealth = _maxHealth;
+        CurrentHealth = _maxHealth;
+
+        Changed?.Invoke(CurrentHealth);
     }
 
     private void OnValidate()
@@ -26,11 +28,11 @@ public class Health : MonoBehaviour, IDamageable
         if (damage <= 0)
             return;
 
-        _currentHealth = Mathf.Max(0, _currentHealth - damage);
+        CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
 
-        Changed?.Invoke(_currentHealth);
+        Changed?.Invoke(CurrentHealth);
 
-        if (_currentHealth <= 0)
+        if (CurrentHealth <= 0)
             Die();
     }
 
@@ -39,9 +41,9 @@ public class Health : MonoBehaviour, IDamageable
         if (amount <= 0)
             return;
 
-        _currentHealth = Mathf.Min(_maxHealth, _currentHealth + amount);
+        CurrentHealth = Mathf.Min(_maxHealth, CurrentHealth + amount);
 
-        Changed?.Invoke(_currentHealth);
+        Changed?.Invoke(CurrentHealth);
     }
 
     private void Die()
