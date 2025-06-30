@@ -46,7 +46,7 @@ public class Health : MonoBehaviour, IDamageable
         Changed?.Invoke(CurrentHealth);
     }
 
-    private void Die()
+    public void Die()
     {
         Died?.Invoke();
     }

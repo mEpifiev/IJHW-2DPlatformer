@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     private PlayerAnimator _playerAnimator;
     private InputReader _inputReader;
 
+    public Health Health => _health;
+
     private void Awake()
     {
         _health = GetComponent<Health>();
