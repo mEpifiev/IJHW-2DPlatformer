@@ -24,8 +24,10 @@ public class GameObjectPool<T> : MonoBehaviour where T : MonoBehaviour
             maxSize: _maxSize);
     }
 
-    public T Get() => _pool.Get();
-    public void Release(T obj) => _pool.Release(obj);
+    public T Get() => 
+        _pool.Get();
+    public void Release(T obj) => 
+        _pool.Release(obj);
 
     protected virtual T CreateObject()
     {
