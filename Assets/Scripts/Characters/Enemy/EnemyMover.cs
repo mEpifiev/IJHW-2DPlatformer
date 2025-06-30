@@ -1,63 +1,40 @@
 using UnityEngine;
 
-[RequireComponent(typeof(EnemyAnimator), typeof(Flipper))]
-public class EnemyMover : MonoBehaviour
+[RequireComponent(typeof(EnemyAnimator), typeof(Flipper), typeof(Rigidbody2D))]
+public abstract class EnemyMover : MonoBehaviour
 {
-    [SerializeField] private Waypoint[] _waypoints;
-    [SerializeField] private float _moveSpeed;
-    [SerializeField] private float _waitTime;
+    [SerializeField] protected float Speed;
+    [SerializeField] protected float StoppingDistance;
 
-    private EnemyAnimator _enemyAnimator;
+    protected Rigidbody2D Rigidbody2D;
+    protected EnemyAnimator EnemyAnimator;
+
     private Flipper _flipper;
 
-    private int _currentWaypointIndex = 0;
-    private float _waitTimer = 0f;
-    private float _reachThreshold = 0.05f;
-    private bool _isWaiting;
-
-    private void Awake()
+    protected virtual void Awake()
     {
-        _enemyAnimator = GetComponent<EnemyAnimator>();
+        Rigidbody2D = GetComponent<Rigidbody2D>();
+        EnemyAnimator = GetComponent<EnemyAnimator>();
         _flipper = GetComponent<Flipper>();
     }
 
-    private void Update()
+    protected virtual void Move(Vector2 direction)
     {
-        if (_isWaiting)
+        if(direction.magnitude > StoppingDistance)
         {
-            _waitTimer += Time.deltaTime;
-
-            if (_waitTimer >= _waitTime)
-            {
-                _waitTimer = 0f;
-                _isWaiting = false;
-
-                _currentWaypointIndex = (_currentWaypointIndex + 1) % _waypoints.Length;
-            }
-
-            _enemyAnimator.SetIdleAnimation();
-
-            return;
+            Rigidbody2D.velocity = direction.normalized * Speed;
+            _flipper.Flip(direction.x);
+            EnemyAnimator.SetRunAnimation();
         }
-
-        MoveToNextWaypoint();
+        else
+        {
+            Stop();
+        }
     }
 
-    private void MoveToNextWaypoint()
+    protected void Stop()
     {
-        Transform target = _waypoints[_currentWaypointIndex].transform;
-
-        Vector2 currentPosition = transform.position;
-        float direction = target.position.x - currentPosition.x;
-
-        currentPosition.x = Mathf.MoveTowards(currentPosition.x, target.position.x, _moveSpeed * Time.deltaTime);
-        transform.position = currentPosition;
-
-        _enemyAnimator.SetRunAnimation();
-
-        if (Mathf.Abs(currentPosition.x - target.position.x) < _reachThreshold)
-            _isWaiting = true;
-
-        _flipper.Flip(direction);
+        Rigidbody2D.velocity = Vector2.zero;
+        EnemyAnimator.SetIdleAnimation();
     }
 }
