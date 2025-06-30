@@ -4,8 +4,7 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     private readonly int ParamsRun = Animator.StringToHash("IsRun");
-    private readonly int ParamsFall = Animator.StringToHash("IsFall");
-    private readonly int ParamsJump = Animator.StringToHash("Jump");
+    private readonly int ParamsAttack = Animator.StringToHash("Attack");
     private readonly int ParamsDeath = Animator.StringToHash("Death");
 
     private Animator _animator;
@@ -25,14 +24,9 @@ public class PlayerAnimator : MonoBehaviour
         _animator.SetBool(ParamsRun, true);
     }
 
-    public void SetJumpAnimation()
+    public void SetAttackAnimation()
     {
-        _animator.SetTrigger(ParamsJump);
-    }
-
-    public void SetFallAnimation()
-    {
-        _animator.SetBool(ParamsFall, true);
+        _animator.SetTrigger(ParamsAttack);
     }
 
     public void SetDeathAnimation()
