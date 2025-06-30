@@ -8708,13 +8708,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1043112839721001888, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
+      propertyPath: StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4308302081630796982, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: _layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 5371063403707463027, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: _attackRange
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5720152006298968654, guid: a298b9913dabe724c9aa3e021ca8c836, type: 3}
       propertyPath: m_Enabled
