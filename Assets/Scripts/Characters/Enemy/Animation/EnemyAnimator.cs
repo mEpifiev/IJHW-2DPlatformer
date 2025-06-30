@@ -4,8 +4,8 @@ using UnityEngine;
 public class EnemyAnimator : MonoBehaviour
 {
     private readonly int ParamsRun = Animator.StringToHash("IsRun");
-    private readonly int ParamsAttack = Animator.StringToHash("IsAttack");
-    private readonly int ParamsDeath = Animator.StringToHash("Death");
+    private readonly int ParamsAttack = Animator.StringToHash("Attack");
+    private readonly int ParamsDeath = Animator.StringToHash("Die");
 
     private Animator _animator;
 

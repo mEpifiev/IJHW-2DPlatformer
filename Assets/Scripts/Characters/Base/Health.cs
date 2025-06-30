@@ -40,7 +40,7 @@ public class Health : MonoBehaviour, IDamageable
             return;
 
         _currentHealth = Mathf.Min(_maxHealth, _currentHealth + amount);
-        Debug.Log(_currentHealth);
+
         Changed?.Invoke(_currentHealth);
     }
 

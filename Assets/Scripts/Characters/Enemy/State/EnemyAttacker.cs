@@ -20,14 +20,10 @@ public class EnemyAttacker : MonoBehaviour
     private void Update()
     {
         if (_cooldownTimer < _attackCooldown)
-        {
             _cooldownTimer += Time.deltaTime;
-        }
 
         if (_currentTarget != null && CanAttack())
-        {
             Attack();
-        }
     }
 
     public void SetTarget(Player target)
@@ -55,7 +51,7 @@ public class EnemyAttacker : MonoBehaviour
         _cooldownTimer = 0f;
         _enemyAnimator.SetAttackAnimation();
 
-        if (_currentTarget.TryGetComponent<IDamageable>(out var damageable))
+        if (_currentTarget.TryGetComponent(out IDamageable damageable))
             damageable.TakeDamage(_attackDamage);
     }
 }

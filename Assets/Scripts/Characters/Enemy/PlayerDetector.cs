@@ -7,7 +7,7 @@ public class PlayerDetector : MonoBehaviour
     [SerializeField] private float _detectionRange = 5f;
     [SerializeField] private LayerMask _layerMask;
 
-    public event Action<Player, float> Detected;
+    public event Action<Player> Detected;
     public event Action Lost;
 
     private Player _currentPlayer;
@@ -25,14 +25,10 @@ public class PlayerDetector : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(_raycastPoint.position, _raycastPoint.right, _detectionRange, _layerMask);
 
         Player detectedPlayer = null;
-        float distanceToPlayer = 0f;
 
         if (hit.collider != null)
         {
-            if (hit.collider.TryGetComponent(out detectedPlayer))
-            {
-                distanceToPlayer = Vector2.Distance(_raycastPoint.position, hit.point);
-            }
+            hit.collider.TryGetComponent(out detectedPlayer);
         }
 
         if (_currentPlayer != detectedPlayer)
@@ -46,14 +42,8 @@ public class PlayerDetector : MonoBehaviour
 
             if (_currentPlayer != null)
             {
-                Detected?.Invoke(_currentPlayer, distanceToPlayer);
+                Detected?.Invoke(_currentPlayer);
             }
-        }
-
-        else if (_currentPlayer != null)
-        {
-            float currentDistance = Vector2.Distance(_raycastPoint.position, hit.point);
-            Detected?.Invoke(_currentPlayer, currentDistance);
         }
     }
 }
