@@ -28,14 +28,11 @@ public class Enemy : MonoBehaviour
 
     private void PlayerDetect(Player player, float distance)
     {
-        print("ldldf");
-
         _enemyPatroller.enabled = false;
         _enemyChaser.Chase(player);
     }
     private void PlayerLost()
     {
-        print("l;;l");
         _enemyChaser.StopChase();
         _enemyPatroller.enabled = true;
     }
