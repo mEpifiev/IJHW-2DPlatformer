@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     private EnemyAnimator _enemyAnimator;
     private Health _health;
 
+    private float _deathDelay = 1f;
+
     private void Awake()
     {
         _enemyPatroller = GetComponent<EnemyPatroller>();
@@ -56,5 +58,7 @@ public class Enemy : MonoBehaviour
         _enemyAttacker.enabled = false;
 
         _enemyAnimator.SetDeathAnimation();
+
+        Destroy(gameObject, _deathDelay);
     }
 }
