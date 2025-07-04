@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     private EnemyAnimator _enemyAnimator;
     private Health _health;
 
-    private float _deathDelay = 1f;
+    private float _deathDelay = 0.5f;
 
     private void Awake()
     {
