@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(EnemyPatroller), typeof(EnemyChaser), typeof(EnemyAttacker))]
 [RequireComponent(typeof(PlayerDetector), typeof(EnemyAnimator))]
-[RequireComponent(typeof(Health))]
+[RequireComponent(typeof(Health), typeof(Rigidbody2D))]
 public class Enemy : MonoBehaviour
 {
     private EnemyPatroller _enemyPatroller;
@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private EnemyAttacker _enemyAttacker;
     private PlayerDetector _playerDetector;
     private EnemyAnimator _enemyAnimator;
+    private Rigidbody2D _rigidbody2D;
     private Health _health;
 
     private float _deathDelay = 0.5f;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
         _enemyAttacker = GetComponent<EnemyAttacker>();
         _playerDetector = GetComponent<PlayerDetector>();
         _enemyAnimator = GetComponent<EnemyAnimator>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
         _health = GetComponent<Health>();
     }
 
@@ -53,9 +55,7 @@ public class Enemy : MonoBehaviour
 
     private void HandleDeath()
     {
-        _enemyPatroller.enabled = false;
-        _enemyChaser.enabled = false;
-        _enemyAttacker.enabled = false;
+        _rigidbody2D.simulated = false;
 
         _enemyAnimator.SetDeathAnimation();
 
