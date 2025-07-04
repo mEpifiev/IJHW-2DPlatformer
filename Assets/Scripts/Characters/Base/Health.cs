@@ -1,20 +1,20 @@
 using System;
 using UnityEngine;
 
-public class Health : MonoBehaviour, IDamageable
+public class Health : MonoBehaviour, IDamageable, IMedicinable
 {
     [SerializeField] private float _maxHealth;
+    [SerializeField] float _currentHealth;
 
-    public float CurrentHealth { get; private set; }
+    public float MaxHealth => _maxHealth;
+    public float CurrentHealth => _currentHealth;
 
     public event Action<float> Changed;
     public event Action Died;
 
     private void Awake()
     {
-        CurrentHealth = _maxHealth;
-
-        Changed?.Invoke(CurrentHealth);
+        _currentHealth = _maxHealth;
     }
 
     private void OnValidate()
@@ -28,11 +28,11 @@ public class Health : MonoBehaviour, IDamageable
         if (damage <= 0)
             return;
 
-        CurrentHealth = Mathf.Max(0, CurrentHealth - damage);
+        _currentHealth = Mathf.Max(0, _currentHealth - damage);
 
-        Changed?.Invoke(CurrentHealth);
+        Changed?.Invoke(_currentHealth);
 
-        if (CurrentHealth <= 0)
+        if (_currentHealth <= 0)
             Die();
     }
 
@@ -41,9 +41,9 @@ public class Health : MonoBehaviour, IDamageable
         if (amount <= 0)
             return;
 
-        CurrentHealth = Mathf.Min(_maxHealth, CurrentHealth + amount);
+        _currentHealth = Mathf.Min(_maxHealth, _currentHealth + amount);
 
-        Changed?.Invoke(CurrentHealth);
+        Changed?.Invoke(_currentHealth);
     }
 
     public void Die()
