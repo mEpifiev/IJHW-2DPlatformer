@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private Health _health;
 
-    private float _deathDelay = 0.5f;
+    private float _deathDelay = 1f;
 
     private void Awake()
     {
