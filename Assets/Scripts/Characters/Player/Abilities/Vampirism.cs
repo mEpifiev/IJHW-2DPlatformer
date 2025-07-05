@@ -3,17 +3,19 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyDetector), typeof(InputReader))]
-[RequireComponent(typeof(EffectView))]
+[RequireComponent(typeof(Health), typeof(EffectView))]
 public class Vampirism : MonoBehaviour
 {
     private const float Duration = 6f;
     private const float Cooldown = 4f;
     private const float DamagePerSecond = 5f;
+    private const float Heal = 4f;
 
     [SerializeField] private float _radius;
 
     private EnemyDetector _enemyDetector;
     private InputReader _inputReader;
+    private Health _health;
     private EffectView _view;
 
     private bool _isActive = false;
@@ -31,6 +33,7 @@ public class Vampirism : MonoBehaviour
     {
         _enemyDetector = GetComponent<EnemyDetector>();
         _inputReader = GetComponent<InputReader>();
+        _health = GetComponent<Health>();
         _view = GetComponent<EffectView>();
     }
 
@@ -94,6 +97,9 @@ public class Vampirism : MonoBehaviour
         }
 
         if (closestEnemy != null && closestEnemy.TryGetComponent(out IDamageable damageable))
+        {
             damageable.TakeDamage(damage);
+            _health.Heal(Heal);
+        }
     }
 }
